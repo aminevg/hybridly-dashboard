@@ -1,0 +1,15 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+    - phpstan-baseline.neon
+
+parameters:
+    paths:
+        - app/
+        - routes/
+        - database/
+        - tests/
+
+    level: max
+
+    scanFiles:
+        - _ide_helper_models.php

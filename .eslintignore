@@ -1,0 +1,7 @@
+vendor
+node_modules
+storage
+.vscode
+.eslintrc-auto-import.json
+pnpm-lock.yaml
+composer.lock
