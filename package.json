@@ -9,6 +9,7 @@
     "production": "vite build"
   },
   "devDependencies": {
+    "@iconify-json/ic": "^1.1.13",
     "@tailwindcss/forms": "^0.5.3",
     "@total-typescript/ts-reset": "^0.4.2",
     "@types/node": "^20.1.4",
@@ -28,6 +29,7 @@
     "tailwindcss": "^3.3.2",
     "typescript": "^5.0.4",
     "unplugin-fonts": "^1.0.3",
+    "unplugin-icons": "^0.16.1",
     "vite": "^4.0.0"
   },
   "dependencies": {

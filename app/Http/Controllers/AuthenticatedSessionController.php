@@ -38,7 +38,7 @@ class AuthenticatedSessionController extends Controller
     /**
      * Destroy an authenticated session.
      */
-    #[Post('logout', middleware: 'auth')]
+    #[Post('logout', name: 'logout', middleware: 'auth')]
     public function destroy(): RedirectResponse
     {
         Auth::guard('web')->logout();

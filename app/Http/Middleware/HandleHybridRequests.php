@@ -6,6 +6,7 @@ use App\Data\SecurityData;
 use App\Data\SharedData;
 use App\Data\UserData;
 use Hybridly\Http\Middleware;
+use Illuminate\Support\Facades\Route;
 
 class HandleHybridRequests extends Middleware
 {
@@ -18,6 +19,7 @@ class HandleHybridRequests extends Middleware
             'security' => SecurityData::from([
                 'user' => UserData::optional(auth()->user()),
             ]),
+            'currentRoute' => Route::currentRouteName(),
         ]);
     }
 }
